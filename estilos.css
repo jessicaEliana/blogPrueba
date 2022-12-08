@@ -9,14 +9,14 @@ header, section, footer{
 
 header{
 
-    height: 500px;
+    height: 550px;
 
-    height: 600px;
+    
 
     
     background-image: url(imagenes/paredon2.jpg);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: 100%;
     
 }
 #barraNav{
