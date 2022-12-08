@@ -1,0 +1,139 @@
+
+header, section, footer{
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+
+}
+
+
+header{
+
+    height: 500px;
+
+    height: 600px;
+
+    
+    background-image: url(imagenes/paredon2.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    
+}
+#barraNav{
+    height: auto;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+section, #seccionVideos, #seccionFotos{
+    height: auto;
+    background-color: aquamarine;
+    
+}
+footer{
+    height: auto;
+    background-color: brown;
+    
+}
+
+#seccion1, #seccion2, #seccionLogin{
+    height: 600px;
+    background-color: chocolate;
+    
+}
+#noticia1{
+    height: 400px;
+    width: 300px;
+    background-color: #9E6B70;
+    
+    
+}
+#inicio, #registrar{
+    width: 400px;
+    height: 500px;
+    background-color: blue;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 13px;
+}
+#iniciarSesion{
+    width: 300px;
+    height: 400px;
+    background-color: blue;
+    margin-right: auto;
+    margin-left: auto;
+    
+    
+}
+.inicio{
+    margin-bottom: 10px;
+   
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+
+#registrar{
+    width: auto;
+    height: auto;
+    background-color: blue;
+    margin-right: auto;
+    margin-left: auto;
+    
+    
+}
+.inicioRegistrarse{
+    padding: 10px;
+    
+
+}
+
+#botoneraInicioSeccion1{
+    height: 400px;
+    width: 250px;
+    background-color:#9E6B70;
+    color:white
+}
+.botonLogeo{
+    text-decoration: none;
+    color: black;
+}
+.carruselInicio{
+
+    width: 300px;
+    height: 450px;
+}
+
+#contacto{
+    height: auto;
+    width: 300px;
+    background-color: cyan;
+    margin-right:auto;
+    margin-left:auto;
+    margin-top: 10px;
+}
+
+#redes{
+    height: auto;
+    width: auto;
+    background-color: greenyellow;
+    text-decoration: none;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 10px;
+    
+}
+#redes ul li {
+    list-style:none;
+   
+}
+#redes ul li a{
+    margin-right: 15px;
+}
+#mapa{
+    height: 300px;
+    width: 300px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 10px;
+}

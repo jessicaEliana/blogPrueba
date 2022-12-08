@@ -8,10 +8,7 @@
     <link rel="shortcut icon" href="imagenes/logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="estilos.css">
-
-    
 </head>
-
 <body>
     <header>
         <!--Carga de barra de navegacion-->
@@ -52,9 +49,9 @@
                           Galeria
                         </a>
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="galeria.html">Imagenes</a></li>
+                          <li><a class="dropdown-item" href="#seccionFotos">Imagenes</a></li>
                           <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Videos</a></li>
+                          <li><a class="dropdown-item" href="#seccionVideos">Videos</a></li>
                           <li><hr class="dropdown-divider"></li>
                           <li><a class="dropdown-item" href="#">Varios</a></li>
                         </ul>
@@ -72,66 +69,38 @@
         </div>
         <!--Fin de carga de navegación-->
     </header>
-    <!--Inicio seccion Nosotros-->
-    <section  id="seccion1" class="container-fluid ">
-      <div class="container text-center">
-  <div class="row align-items-end">
+    <!--Inicio seccion Fotos-->
+    <section  id="seccionFotos" class="container-fluid ">
+        <!--Cargamos primer panel de imagen-->
+		<!--Usamos columnas para organizar las imagenes-->
+		
+		<div class="container text-center">
+  <div class="row">
     <div class="col">
-      <!--Carga de inicio-->
-        <div id="botoneraInicioSeccion1">
-          <h3>Inicio</h3>
-          <p>Puedes iniciar sesion para acceder.</p>
-          <!--Cargamos boton inicio-->
-          <button type="button" class="btn  btn-outline-warning " ><a class="botonLogeo" href="login.html">Iniciar Sesión</a></button>
-          <p>Si no tienen cuenta puedes registrarte.</p>
-          <button type="button" class="btn  btn-outline-warning " ><a href="registrarse.html" class="botonLogeo">Registrarse</a></button>
-          <!--Fin boton inicio-->
-          <!--Cargamos boton registrarse-->
-          <!--Fin boton registrarse-->
-        </div>
-
-      <!--Fin de carga de inicio-->
-      
+      <img src="imagenes/foto1.jpg" class="img-thumbnail" alt="Alumnos del curso modelando" height="200px">
     </div>
     <div class="col">
-      <!--Carga de carrusel-->
-      
-      <div id="carouselExampleSlidesOnly" class="carousel slide carruselInicio" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="imagenes/inicioNinios.jpg" class="d-block w-100" alt="...">
+      <img src="imagenes/foto2.jpg" class="img-thumbnail" alt="Alumno pintando">
     </div>
-    <div class="carousel-item">
-      <img src="imagenes/inicioNinia.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="imagenes/noticia_curso.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="imagenes/inicioninio.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="imagenes/foto1.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="imagenes/foto2.jpg" class="d-block w-100" alt="...">
+    <div class="col">
+      <img src="imagenes/foto1.jpg" class="img-thumbnail" alt="Alumnos del curso modelando" height="200px">
     </div>
   </div>
 </div>
-
-      <!--Fin de carga de carrusel-->
-    </div>
-    </div>
-</div>
+		
+        
+        <!--Fin primer panel de imagen-->
 
     </section>
-    <!--Fin seccion nosotros-->
-    <!--Inicio seccion login-->
-    <section id="seccion2" class="container-fluid ">
+    <!--Fin seccion fotos-->
+    <!--Inicio seccion videos-->
+    <section id="seccionVideos" class="container-fluid ">
+                
+        <iframe width="320" height="auto" src="https://www.youtube.com/embed/-dj0zIy-Y7A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     </section>
-    <!--Fin seccion login-->
-    <footer  class="row align-items-start">
+    <!--Fin seccion videos-->
+    <footer  class="row align-items-start ">
         <!--Inicio contacto-->
         <div id="contacto">
             <h3>Contacto</h3>
@@ -141,7 +110,8 @@
 
         </div>
         <!--Fin contacto-->
-        
+
+
         <!--Carga de redes sociales-->
         <div id="redes">
             
