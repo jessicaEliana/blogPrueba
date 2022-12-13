@@ -3,21 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-    <title>Pruebas</title>
-</head>
-<body>
-=======
     <title>Fundacion Somos Barro</title>
     <!--Cargamos imagen de pestaña de pagina-->
     <link rel="shortcut icon" href="imagenes/logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="estilos.css">
-
->>>>>>> 57b7465eafcd2ff997364fbdd9e5ab027dacfda2
-    
 </head>
-
 <body>
     <header>
         <!--Carga de barra de navegacion-->
@@ -43,7 +34,7 @@
                           <li><hr class="dropdown-divider"></li>
                           <li><a class="dropdown-item" href="registrarse.html">Registrarse</a></li>
                           <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#contacto">Contacto</a></li>
+                          <li><a class="dropdown-item" href="#footContacto">Contacto</a></li>
                         </ul>
                       </li>
                     <!--Fin de botones drop inicio-->
@@ -78,57 +69,98 @@
         </div>
         <!--Fin de carga de navegación-->
     </header>
-    <!--Inicio seccion Nosotros-->
-    <section  id="seccion1" class="container-fluid ">
-      <div class="container text-center">
-  <div class="row align-items-end">
-    <div class="col">
-      <!--Carga de inicio-->
-        <div id="botoneraInicioSeccion1">
-          <h3>Inicio</h3>
-          <p>Puedes iniciar sesion para acceder.</p>
-          <!--Cargamos boton inicio-->
-          <button type="button" class="btn  btn-outline-warning " ><a class="botonLogeo" href="login.html">Iniciar Sesión</a></button>
-          <p>Si no tienen cuenta puedes registrarte.</p>
-          <button type="button" class="btn  btn-outline-warning " ><a href="registrarse.html" class="botonLogeo">Registrarse</a></button>
-          <!--Fin boton inicio-->
-          <!--Cargamos boton registrarse-->
-          <!--Fin boton registrarse-->
+    <!--Inicio seccion registrarse-->
+    <section id="seccion" class="container-fluid ">
+
+         <!--Cargamos formulario de login-->
+         <div id="registrar" class="col-2 col-lg-5 ">
+            <h3 style="text-align:center">Registrarse</h3>
+            <!--Inicio de carga para registro-->
+            <form class="row g-3 needs-validation inicioRegistrarse" novalidate>
+                <div class="col-md-4">
+                  <label for="validationCustom01" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="validationCustom01" value="Juan" required>
+                  <div class="valid-feedback">
+                    Verificado!
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom02" class="form-label">Apellido</label>
+                  <input type="text" class="form-control" id="validationCustom02" value="Perez" required>
+                  <div class="valid-feedback">
+                    Verificado!
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
+                  </div>
+
+
+
+                <div class="col-md-4">
+                  <label for="validationCustomUsername" class="form-label">Nombre de usuario</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                      Porfavor ingrese nombre de usuario.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="validationCustom03" class="form-label">Ciudad</label>
+                  <input type="text" class="form-control" id="validationCustom03" required>
+                  <div class="invalid-feedback">
+                    Porfavor ingrese una ciudad valida.
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <label for="validationCustom04" class="form-label">Provincia</label>
+                  <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Elegir...</option>
+                    <option>Chaco</option>
+                    <option>Formosa</option>
+                    <option>Corrientes</option>
+                    <option>Misiones</option>
+                    <option>Santa Fe</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Porfavor ingrese una provincia valida..
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <label for="validationCustom05" class="form-label">Codigo Postal</label>
+                  <input type="text" class="form-control" id="validationCustom05" required>
+                  <div class="invalid-feedback">
+                    Porfavor ingrese un codigo postal valido.
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                      Acepto los terminos y condiciones.
+                    </label>
+                    <div class="invalid-feedback">
+                      Debes aceptar primero.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">Enviar</button>
+                </div>
+              </form>
+            <!--Fin de carga de registro-->
+
         </div>
-
-      <!--Fin de carga de inicio-->
-      
-    </div>
-    <div class="col">
-      <!--Carga de carrusel-->
-      
-      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="imagenes/chicos1.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="imagenes/arte.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="imagenes/nosotros2.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-</div>
-
-      <!--Fin de carga de carrusel-->
-    </div>
-    </div>
-</div>
+        <!--Fin Formulario de login-->
 
     </section>
-    <!--Fin seccion nosotros-->
-    <!--Inicio seccion login-->
-    <section id="seccion2" class="container-fluid ">
-
-    </section>
-    <!--Fin seccion login-->
-    <footer  class="row align-items-start">
+    <!--Fin seccion registrarse-->
+    <footer id="footContacto" class="row align-items-start ">
         <!--Inicio contacto-->
         <div id="contacto">
             <h3>Contacto</h3>
@@ -138,7 +170,8 @@
 
         </div>
         <!--Fin contacto-->
-        
+
+
         <!--Carga de redes sociales-->
         <div id="redes">
             
